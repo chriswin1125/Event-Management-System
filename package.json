@@ -1,0 +1,22 @@
+{
+  "name": "nexevent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NexEvent - Apple-inspired Event Management Platform",
+  "main": "backend/server.js",
+  "scripts": {
+    "postinstall": "npm install --prefix backend",
+    "build": "npm install --prefix backend",
+    "start": "node backend/server.js",
+    "server": "node backend/server.js",
+    "seed": "node backend/utils/seeder.js"
+  },
+  "keywords": [
+    "event-management",
+    "mern-stack",
+    "mongodb-atlas",
+    "apple-design"
+  ],
+  "author": "chriswin1125",
+  "license": "ISC"
+}
