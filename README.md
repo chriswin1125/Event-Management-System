@@ -177,6 +177,5 @@ npm run dev
 - Event moderation queue where admins can review organizer submissions and **Approve** or **Reject** with custom feedback before public publishing.
 - User management table to change roles (User ↔ Organizer ↔ Admin) or toggle active status.
 - Platform-wide transaction ledger and revenue distribution.
-<img width="1907" height="902" alt="image" src="https://github.com/user-attachments/assets/2603623a-37e2-43fd-8158-2ebd60c80bda" />
 <img width="1917" height="907" alt="image" src="https://github.com/user-attachments/assets/6e1f6a44-e586-4f7a-ba14-ea99e7b739fc" />
 <img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/4253dec5-8959-4386-8a69-339c511162e8" />
