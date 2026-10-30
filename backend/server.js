@@ -17,26 +17,12 @@ const app = express();
 // Trust reverse proxy (Render, Heroku, AWS, Railway)
 app.set('trust proxy', 1);
 
-// Middleware
-const allowedOrigins = process.env.CLIENT_URL
-  ? process.env.CLIENT_URL.split(',').map((url) => url.trim())
-  : ['http://localhost:5173'];
-
 app.use(
   cors({
-    origin: (origin, callback) => {
-      // Allow server-to-server, curl, Postman, or health checks with no origin
-      if (!origin) return callback(null, true);
-      if (
-        process.env.NODE_ENV !== 'production' ||
-        allowedOrigins.includes(origin) ||
-        allowedOrigins.includes('*')
-      ) {
-        return callback(null, true);
-      }
-      return callback(null, true); // Safe fallback
-    },
+    origin: (origin, callback) => callback(null, true),
     credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With', 'Accept'],
   })
 );
 app.use(express.json({ limit: '10mb' }));

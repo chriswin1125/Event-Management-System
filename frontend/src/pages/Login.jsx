@@ -24,7 +24,13 @@ const Login = () => {
       await login(email, password);
       navigate(redirectPath, { replace: true });
     } catch (err) {
-      setError(err.response?.data?.message || 'Login failed. Please check credentials.');
+      if (!err.response) {
+        setError(
+          'Connecting to server timed out or failed. If using Render free tier, the service may be spinning up from sleep — please wait ~30 seconds and try again.'
+        );
+      } else {
+        setError(err.response?.data?.message || 'Login failed. Please check credentials.');
+      }
     } finally {
       setLoading(false);
     }
@@ -39,7 +45,13 @@ const Login = () => {
       else if (loggedUser.role === 'organizer') navigate('/organizer');
       else navigate(redirectPath, { replace: true });
     } catch (err) {
-      setError(err.response?.data?.message || 'Quick demo login failed.');
+      if (!err.response) {
+        setError(
+          'Unable to reach backend. If the cloud database is waking up, please wait a moment and try again.'
+        );
+      } else {
+        setError(err.response?.data?.message || 'Quick demo login failed.');
+      }
     } finally {
       setLoading(false);
     }

@@ -31,7 +31,13 @@ const Register = () => {
         navigate('/');
       }
     } catch (err) {
-      setError(err.response?.data?.message || 'Registration failed. Please check inputs.');
+      if (!err.response) {
+        setError(
+          'Connecting to server timed out or failed. If using Render free tier, the service may be spinning up from sleep — please wait ~30 seconds and try again.'
+        );
+      } else {
+        setError(err.response?.data?.message || 'Registration failed. Please check inputs.');
+      }
     } finally {
       setLoading(false);
     }
