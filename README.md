@@ -1,4 +1,6 @@
-<img width="1907" height="902" alt="image" src="https://github.com/user-attachments/assets/a092ba4a-4079-4e47-a2a0-b4bb2eef0e5f" /># NexEvent — Connect • Engage • Experience (MERN Stack)
+<img width="1907" height="902" alt="image" src="https://github.com/user-attachments/assets/a092ba4a-4079-4e47-a2a0-b4bb2eef0e5f" />
+
+# NexEvent — Connect • Engage • Experience (MERN Stack)
 
 A modern, responsive, and commercial-grade **Event Management System** built with **MongoDB Atlas, Express.js, React 19, and Node.js**, featuring custom brand identity and following **Apple's official website design language** (reference: [apple.com](https://www.apple.com)).
 
