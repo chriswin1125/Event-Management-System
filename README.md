@@ -2,6 +2,8 @@
 
 A modern, responsive, and commercial-grade **Event Management System** built with **MongoDB Atlas, Express.js, React 19, and Node.js**, featuring custom brand identity and following **Apple's official website design language** (reference: [apple.com](https://www.apple.com)).
 
+🌐 **Live Application & Dashboard**: [https://eventnex.vercel.app](https://eventnex.vercel.app)
+
 ---
 
 ## 🌟 Apple Design Language & Visual System
@@ -21,15 +23,17 @@ A modern, responsive, and commercial-grade **Event Management System** built wit
 
 ---
 
-## 🚀 Live Demo Accounts (1-Click Fast Login)
+## 🚀 Live Demo Accounts & Dashboards (1-Click Fast Login)
 
-Use the built-in **"Demo"** pill in the top navigation bar or the login screen to sign in instantly:
+> 🔗 **Live URL**: [https://eventnex.vercel.app](https://eventnex.vercel.app)
 
-| Role | Email | Password | Capabilities |
-| :--- | :--- | :--- | :--- |
-| **Admin** | `admin@eventhub.com` | `password123` | Curation queue (Approve/Reject events), user role & status moderation, platform analytics, all transactions |
-| **Event Organizer** | `organizer@eventhub.com` | `password123` | Publish new events, multi-tier ticket capacity, attendee lists, Recharts sales analytics |
-| **Attendee / User** | `user@eventhub.com` | `password123` | Discover events, book tickets, digital QR passes, reviews, self-service cancellation |
+Experience the live platform and role-based dashboards directly. Use the built-in **"Demo"** pill in the top navigation bar or the login screen to sign in instantly:
+
+| Role | Email | Password | Capabilities | Live Dashboard Link |
+| :--- | :--- | :--- | :--- | :--- |
+| **Admin** | `admin@eventhub.com` | `password123` | Curation queue (Approve/Reject events), user moderation, analytics, all transactions | [Admin Dashboard](https://eventnex.vercel.app/admin) |
+| **Event Organizer** | `organizer@eventhub.com` | `password123` | Publish events, multi-tier ticket capacity, attendee lists, Recharts sales analytics | [Organizer Dashboard](https://eventnex.vercel.app/organizer) |
+| **Attendee / User** | `user@eventhub.com` | `password123` | Discover events, book tickets, digital QR passes, reviews, self-service cancellation | [User Dashboard](https://eventnex.vercel.app/user/dashboard) |
 
 ---
 

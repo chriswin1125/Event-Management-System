@@ -128,7 +128,7 @@ You should see output similar to:
 
 1. Update the backend's `CLIENT_URL` environment variable on Render with your newly assigned Vercel URL:
    ```env
-   CLIENT_URL=https://your-app.vercel.app
+   CLIENT_URL=https://eventnex.vercel.app
    ```
-2. Open your live Vercel URL in your browser.
+2. Open your live Vercel URL: [https://eventnex.vercel.app](https://eventnex.vercel.app) in your browser.
 3. Click the **"Demo"** pill in the top navigation bar to test instant sign-in with **Admin**, **Organizer**, or **Attendee**!
